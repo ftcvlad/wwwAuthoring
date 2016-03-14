@@ -1,0 +1,61 @@
+#signinDiv, #signupDiv {
+	border:solid thin rgb(171,143,143);
+	padding-bottom:20px;
+	margin:20px 25px 25px 25px;
+	}
+
+#centerContent form p, #centerContent form input{
+	display:inline-block;
+	
+	margin-top:5px;
+	margin-bottom:5px;
+	}
+
+#centerContent form p{
+	text-align:right;
+	width:175px;
+	margin-right:10px;
+	}
+	
+#centerContent form input[type="text"]{
+	width:150px;
+	}
+	
+#centerContent form .short{
+	width: 90px;
+	}
+#signinDiv form input[type="submit"]{
+	margin-left:255px;
+	margin-top:20px;
+	}
+#signupDiv form input[type="submit"]{
+	margin-left:210px;
+	margin-top:20px;
+	}
+#centerContent form input[type="checkbox"]{
+	margin-left:138px;
+	margin-right:10px;
+	}
+	
+#centerContent  h3{
+		
+		margin:10px 0 10px 0;
+		padding-left:20px;
+}
+
+#centerContent #signupDiv form p::before{
+	content: "* ";
+	font-weight:bold;
+	font-size:small;
+	vertical-align:top;
+	}
+#centerContent #signupDiv form #specialP p{
+		color:grey; 
+		font-size:small; 
+		text-align:left; 
+		width:120px;
+		text-indent:5px;
+}
+#centerContent #signupDiv form #specialP p::before{
+	content:"";
+	}

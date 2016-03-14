@@ -1,0 +1,16 @@
+#centerContent p.specialP {
+	text-indent:50px;
+	
+	}
+#centerContent p {	
+	margin-bottom:5px;
+	margin-top:5px;
+	}
+	
+#centerContent a img{
+	max-height:40px;
+	width:auto;
+	height:auto;
+	padding:20px;
+	}
+	

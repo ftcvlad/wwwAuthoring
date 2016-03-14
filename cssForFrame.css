@@ -1,0 +1,593 @@
+/*tabindexes for buttons, search and sign in sign up from 1 to 14. Then go content items from 15 (actually from 20) to 91 including. Then right column and footer from 92 onwards*/   
+   html,body{
+      height:100%;
+    }
+
+    body {
+      min-width: 820px;   
+	  margin:0;	  
+	  background: rgb(160,156,103);
+	  font-family: Century Gothic, Calibri, Serif;
+    }
+   
+
+    #container {
+      /*overflow: hidden; /*for equal height columns*//*BUT this makes anchors cut page, and since all columns have same background, 
+	  we don't care about equal height*/
+
+      min-height: 100%;
+      padding-left: 170px;      /* LC width */
+      padding-right: 250px;     /* RC width */
+      
+      margin-bottom:-181px;/* the bottom margin is the negative value of the footer's height */
+
+	  margin-left:auto;
+	  margin-right:auto;
+	  max-width:1000px;/*if container grows beyond that, margins appear*/
+	   
+	  background: #FFFCDD; 
+	  background-repeat: no-repeat;
+	  background-image: url("img/4.png");
+	  background-position: 100px 0px;
+    }
+     #container .column {
+      /*padding-bottom: 20000px; /*for equal height columns*/
+      /*margin-bottom: -20000px;  */
+
+      position: relative;
+      float: left;
+    }
+
+    /*=========================================================FOOTER===========================================*/
+
+    #footer,.push {
+        height: 181px; /* .push must be the same height as .footer. it provides 181 pixels, so that footer doesn't overlap content */
+        clear: both;
+    }
+	
+	
+    #footer {
+      clear: both;
+      position: relative;
+	
+
+      font-size: large;
+      background: #2F4A30;
+	  
+	  padding-left:170px;
+	  
+	  padding-bottom: 20px;
+	  white-space: nowrap;
+	  min-width: 650px;/*when body stops to squeeze, footer also stops. 715px(max-width body)-170px(padding left)*/
+	   margin:auto;
+	   max-width:1000px;
+	   padding-right:250px;
+    }
+	#footer h3{
+		color:white;
+		margin-bottom: 5px;
+		margin-top:22px;
+	}
+	#footer  a, #footer p{
+		text-decoration:none;
+		color: #F0EA75;
+		margin:0;
+		font-size: small;
+		padding-top:3px;
+		padding-bottom:3px;
+		
+	}
+	#footer p{
+		display:inline-block;
+		min-width:60px;
+	
+	}
+	#footer p.boldInFoot{
+		font-weight: bold;
+		
+		}
+	#footer p.doIndent{
+		text-indent:60px;
+		}
+	
+	#footer  a img, #footer  a p{/*these separately, as need to allign middle, but don't want to insert <br>*/
+		display: inline-block;
+		vertical-align: middle;
+		}
+	#footer img{
+		width:15px;
+		height:15px;
+	}
+	
+	#footer  a:hover, #footer  a p:hover{
+		color:red;
+	}
+
+	#footer .footColumn {
+		padding-left:50px;
+		display: inline-block;
+		vertical-align: top;
+		
+	
+	}
+    /*=========================================================CENTER=======================================*/
+   
+    #center {
+      margin-top:0;
+      width: 100%;
+	 
+    }
+
+    #centerHeader{
+      
+      
+      height:130px;
+     text-align: left;
+     padding-left:170px;
+
+
+    }
+     #centerHeader h1{
+	
+      margin:0;
+      padding-top: 40px;
+	  font-size: 42px;
+     }
+
+    #centerHeader h3{
+      margin:0;
+     }
+    
+	/*------------------------------------------------------search bar---------------------------------*/
+  
+    #searchBar{
+      margin-left:30px;
+	  margin-right:30px;
+	  background: rgba(54, 25, 25, .9);
+      margin-top: 0;
+      padding-top:0;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      color: #FFF;
+	  border-radius:10px;
+	  
+    }
+	
+	/*with curr min-content-width not needed
+	#searchBar .search  input[type="text"] {
+		width:140px;/*to prevent it coming over slogan and everything floating down
+		}*/
+	
+
+    #searchBar  p{
+      padding-left:10px;
+      padding-top:5px;
+      padding-bottom: 5px;
+      margin: 0px;
+    }
+    
+    .search{/*a lot of flexboxes to allign at center*/
+      display: flex;
+      align-items:center;
+      padding-right:15px;
+
+    }
+
+    /*------------------------------------------COMMON CONTENT FOR CENTER CONTENT PART----------------------------------*/
+    #centerContent{
+	
+	border:solid thin #e3e1e1 ;
+      border-radius:25px;
+      padding:40px;
+      color: #000;
+
+	  background: rgba(255, 255, 255,0.8);
+	  margin:20px 40px 20px 40px;
+    }
+	
+
+    #centerContent p{
+      text-indent: 20px;
+      margin-bottom:16px;
+	  margin-top:10px;
+    }
+	
+	#centerContent .thrFlowers {
+		text-align: center;
+	
+	}
+	
+	#centerContent .thrFlowers img{
+		max-width:5%; 
+		height:auto; 
+		margin: auto; 
+		padding-top:60px; 
+		display:inline-block;
+		
+		
+		}
+	
+
+
+    /*===============================================================LEFT COLUMN========================================*/
+
+
+    #left {
+      width: 170px;             /* LC width */
+      right: 170px;            
+      margin-left: -100%;
+	  margin-top:310px;
+    }
+    
+
+    #left #navigation .button{
+		 margin-left:30px;
+		 
+		 float: left;
+		 margin-top:8px;
+		   
+		 padding: 5px 10px 5px 10px;/*top-right-bottom-left*/
+			 
+			  
+		
+		 font-size:115%;
+		 text-decoration: none;
+			  
+		   
+		 background: rgba(57, 106, 43, 1);
+		 background-image: url("img/soil.png");
+			
+		 /*transition:  background-color 0.5s;/*transition margin-left 0.5s; margin-left:50px   this is annoying  */
+		 transition:  background-image 0.5s, color 0.5s;
+		 width:140px;
+		 border-radius:10px;
+    }
+	
+	#left #navigation .button.currPage{
+		
+		 color:black;  
+		 background-image: url("img/soil3.png"); 
+		
+		 
+		 font-weight:bold;
+	}
+	
+	
+	
+
+	/*special button is red*//* no special buttons :(
+	 #left #navigation .special{
+       background: rgba(149,29,1,1);
+	  
+     }*/
+
+	
+
+   
+    
+     #left #navigation .disappearing {
+          display:none;
+    }
+ 
+
+
+    /* unvisited link */
+    
+   
+    #left #navigation a:link{
+        color: #FFF;   
+    }
+
+    #left #navigation a:hover {
+     
+	
+	
+      text-decoration: none;
+      color:#FFF;
+	 
+    }
+	#left #navigation a[class="button special"]:hover, #left #navigation a[class="button"]:hover{
+	
+	 background-image: url("img/soil2.png");
+	 color:black;
+	
+	}
+	/*#left #navigation a.special:hover{
+	  background: rgba(214,44,1,1);
+	}*/
+
+    /* selected link */
+      #left #navigation a:visited {
+        color:white;
+        
+    }
+
+    /* selected link */
+      #left #navigation a:active {
+        color:white;
+       
+    }
+
+
+
+
+
+    /*===========================================RIGHT COLUMN==============================================*/
+
+    #right {
+     
+     width: 250px;            
+     margin-right: -250px;
+    font-family: "Century Gothic", Georgia, Serif;
+     
+
+    }
+
+    #right #header{
+ 
+     height:35px;
+    color: #000;
+     margin-right:60px;
+      margin-left:0px;
+	  background: #FFFCDD;
+    border: thin solid #e3e1e1;
+	border-radius: 0 0 10px 10px;
+	padding: 0 5px 0 5px;
+
+    }
+
+    #right #header h3{
+       margin:0;
+       
+
+     }
+    #right #header p{
+      margin:0;
+      
+      font-size: small;
+	  
+
+    }
+    #right #header .signButton{
+
+      float:left;
+      
+      color:#000;
+
+
+      padding-left:5px;
+      padding-right:5px;
+      padding-bottom:2px;
+      padding-top:2px;
+      margin-left:10px;
+      margin-top:5px;
+      font-size:115%;
+      text-decoration: none;
+    }
+
+    #right #header a:hover{
+       color:red;
+      
+    }
+	
+	/*---------------------------------------------events----------------------------------------------------*/
+	#right #events {
+	   margin-right:20px;
+	   margin-top:42px;
+	}
+
+    #right #events > p, #bids > p{
+      margin-top: 0px;
+	  margin-bottom: 0px;
+	 
+      padding-top:23px;
+      padding-bottom: 27px;
+      padding-right:20px;
+	  padding-left:15px;
+      
+      color: #FFFEEF;
+      text-align: center;
+      font-size: large;
+	  font-weight: bold;
+	  
+	   
+	  
+	  background: url("img/shrubtree.png");
+
+    }
+    
+     #right #events ul{
+
+      
+	
+	  margin-top:0px;
+      margin-left:5px;
+      
+      margin-bottom: 0;
+     
+     padding-left:0px;
+     
+     max-height: 250px;
+    
+	/*for hidden scrollbar*/
+	overflow-y:scroll;
+	width: 100%;
+    padding-right: 5px;/*vertical  scrollbar appears in padding and is not visible, because width 100%*/
+      
+	 
+	
+
+      list-style: none;/*remove standard dot*/
+
+
+     }
+
+     #right #events ul li{
+      padding-top:11px;
+      padding-bottom:7px;
+	  padding-left:10px;
+	 
+	 
+    }
+
+     
+
+
+     #right #events ul li a:first-child{
+      
+      color:black;
+	   color: #FFFCDD;
+      font-size: 105%;
+      font-weight:bold;
+      
+      padding:5px;
+      padding-bottom:5px;
+      text-decoration: none;
+
+
+
+     }
+
+  
+
+
+    
+
+    /* mouse over link */
+     #right #events  ul li a:hover {
+        color: #B2D8AE;
+        text-decoration: none;
+    
+    }
+
+    #right #events ul li a:nth-child(3){/* 3 because <br> is also a child*/
+      
+      color:white;
+	  text-decoration: none;
+      margin:0;
+      font-size: small;
+    }
+	#right #events ul li a:nth-child(3):hover{
+		 text-decoration: underline;
+	}
+	
+	
+	/*---------------------------------------------bids-------------------------------------------------*/
+	
+	
+	#right #bids{
+	margin-top:20px;
+  margin-right:20px;
+	margin-bottom:20px;
+	}
+
+   
+
+    #right #bids #noScrollPane, #right #events #noScrollPane {
+      
+		margin-top:-20px;
+	   background: rgba(38, 69, 29, 1);
+       padding-top:20px;
+       padding-bottom:25px;
+       border-radius: 20px;
+	   overflow: hidden;
+	   background-repeat: repeat-y;
+		background-image: url("img/soil.png");
+    }
+
+	#right #bids {
+		margin-top: 30px;
+	}
+    #right #bids #allBidsPane{
+	
+	
+     
+      margin-left:5px;
+	  
+       
+      width: 100%;
+      padding-right: 5px;/*vertical  scrollbar appears in padding and is not visible, because width 100%*/
+     
+     
+      max-height: 450px;
+      
+      height:450px;
+      overflow-y:auto;
+      overflow-x: hidden;
+
+    }
+
+    #right #bids #allBidsPane .aBid {
+       padding-top:8px;
+       padding-bottom:7px;
+       width:100%;
+       height:85px;
+       border-top: thin solid #FFFCDD;
+	   border-bottom: thin solid #FFFCDD;
+      
+	
+
+    }
+     #right #bids #allBidsPane .aBid a{
+      text-decoration: none;
+      color:#FFF;
+      
+      float: left;
+      width:90px;
+      float: left;
+      margin-left:10px;
+
+     }
+	 /*here only square images! And smaller, since anyway max 85 mix in width*/
+	 #right #bids #allBidsPane .aBid a img{
+		width:auto;
+		height:auto;
+		max-width:85px
+	}
+  
+   #right #bids #allBidsPane .aBid a:hover{
+      color:#B2D8AE;
+    }
+ 
+
+
+
+   
+
+    
+
+
+    /*========================================================MEDIA QUERIES==========================================*/
+
+  @media only screen and (max-width: 1070px) {
+        #right{
+          display: none;
+        }
+		 #footer {
+			padding-right:0;
+		 
+		 }
+        #container{
+          padding-right:0;
+          margin-right:0;
+		  
+         }
+		
+         #footer{
+          margin-right:0;
+         }
+         #left #navigation .disappearing {
+          display:flex;
+    }
+  }
+
+  /*this is as footer doesn't fit with current padding*/
+   @media only screen and (max-width: 920px) {
+		#footer .footColumn{
+			padding-left:20px;
+		 
+		 }
+   
+   }
+

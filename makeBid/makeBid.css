@@ -1,0 +1,39 @@
+#centerContent #makeBidContainer{
+		width:90%;
+		
+		border:thin solid rgb(171,143,143);
+		padding-top:20px;
+		
+}
+
+#centerContent #makeBidContainer form p,  form input, form textarea{
+	display:inline-block;
+	
+	margin-top:0px;
+	margin-bottom:10px;
+
+	
+	vertical-align:top;
+	width:160px;
+	
+}
+
+.longer{
+	width:255px;
+}
+
+form textarea{
+ resize: none;
+ }
+ 
+#centerContent #makeBidContainer form p{
+	
+	text-align:left;
+	}
+	
+#centerContent #makeBidContainer form	input[type="submit"]{
+	width:100px;
+	margin-left:20px;
+	margin-bottom:20px;
+	}
+

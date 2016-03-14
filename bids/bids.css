@@ -1,0 +1,76 @@
+#centerContent #bidContainer table{
+	width:100%;
+	
+	border: solid thin grey;
+	border-collapse: collapse;
+	table-layout:fixed;
+	}
+	
+	
+#centerContent #bidContainer table td{
+	
+	border-top: solid thin green;
+	border-bottom: solid thin green;
+	border-left: solid thin rgb(175,117,117);
+	border-right: solid thin rgb(175,117,117);
+	word-wrap:break-word;/*to break long words*/
+	text-align:center;
+	padding: 3px 3px 3px 3px;
+	}
+	
+#centerContent #bidContainer table tr th{
+		border-left: solid thin rgb(175,117,117);
+	border-right: solid thin rgb(175,117,117);
+}
+	
+#centerContent #bidContainer table tr:hover{
+		background:rgb(236, 229, 176);
+	
+	}
+#centerContent #bidContainer table td:nth-child(1), #centerContent #bidContainer table th:nth-child(1){
+	width:100px;
+	
+	}
+#centerContent #bidContainer table td:nth-child(1) img{
+	max-width:85px;
+	width:auto;
+	height:auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto ;
+	padding-top:3px;
+	padding-bottom:3px;
+	
+}
+
+#centerContent #bidContainer table td:nth-child(2), #centerContent #bidContainer table th:nth-child(2){
+	width: 80px;
+	
+
+}
+
+#centerContent #bidContainer table td:nth-child(3), #centerContent #bidContainer table th:nth-child(3){
+	width: auto;
+
+}
+
+#centerContent #bidContainer table td:nth-child(4), #centerContent #bidContainer table th:nth-child(4){
+	width: 80px;
+
+}
+#centerContent #bidContainer table td:nth-child(5), #centerContent #bidContainer table th:nth-child(5){
+	
+	
+	width: 65px; /*it is extended to accommodate button 59px wide*/
+	}
+	
+#centerContent #bidContainer table td:nth-child(6),  #centerContent #bidContainer table th:nth-child(6){
+	width:0px;
+	vertical-align:top;
+}
+#centerContent #bidContainer table tr td input[type=submit]{
+	 margin-left: auto;
+    margin-right: auto ;
+	width:60px;
+	
+	}
